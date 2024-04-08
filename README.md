@@ -38,14 +38,14 @@ While this guide is based on Fedora and Manjaro for ease of explanation, **the p
 
 To begin, determine whether your system uses PipeWire or PulseAudio in compatibility mode with pipewire-pulse. You can use the following commands to check your audio manager. The command that does not return an error, such as "unknown module," indicates your current server stream of audio manager.
 
-For **Pipewire-Pulse**:
-```bash
-systemctl --user status pipewire-pulse
-```
-
 For **PipeWire**:
 ```bash
 systemctl --user status pipewire
+```
+
+For **Pipewire-Pulse**:
+```bash
+systemctl --user status pipewire-pulse
 ```
 
 ### Environment Setup
