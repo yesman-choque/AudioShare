@@ -4,8 +4,8 @@
 id=$(pw-cli list-objects | grep -B3 'node.name = "my-share"' | grep 'id' | awk '{print $2}' | tr -d ',=\n')
 
 # your audio input, left and right
-playbackL=""
-playbackR=""
+playbackL="alsa_output.pci-0000_00_1f.3.analog-stereo:playback_FL"
+playbackR="alsa_output.pci-0000_00_1f.3.analog-stereo:playback_FR"
 
 
 # creating the modules that we will use
@@ -25,9 +25,6 @@ pw-link my-system:monitor_FR $playbackR
 pw-link my-system:monitor_FL my-share:playback_FL
 pw-link my-system:monitor_FR my-share:playback_FR
 
-pw-link my-share:monitor_FL my-bridge:playback_FL
-pw-link my-share:monitor_FR my-bridge:playback_FR
-
 # creating a virtual microphone
 pw-loopback -m '[ FL FR]' --playback-props='media.class=Audio/Source node.name=my-source' -n my-mic &
 
@@ -35,12 +32,11 @@ pw-loopback -m '[ FL FR]' --playback-props='media.class=Audio/Source node.name=m
 sleep 5
 
 # linking the virtual microphone
-pw-link my-bridge:monitor_FL my-mic:input_FL
-pw-link my-bridge:monitor_FL my-mic:input_FR
+pw-link my-share:monitor_FL my-mic:input_FL
+pw-link my-share:monitor_FL my-mic:input_FR
 
 # setting the volume of the audio share
 pw-cli s $id Props '{ channelVolumes: [ 0.2, 0.2 ] }'
 
 exit 0
-
 
