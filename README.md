@@ -38,12 +38,12 @@ While this guide is based on Fedora and Manjaro for ease of explanation, **the p
 
 To begin, determine whether your system uses PipeWire or PulseAudio in compatibility mode with pipewire-pulse. You can use the following commands to check your audio manager. The command that does not return an error, such as "unknown module," indicates your current server stream of audio manager.
 
-For PulseAudio:
+For **PulseAudio**:
 ```bash
 systemctl --user status pulseaudio
 ```
 
-For PipeWire:
+For **PipeWire**:
 ```bash
 systemctl --user status pipewire
 ```
@@ -54,6 +54,8 @@ Once you have identified your server, proceed according to the corresponding ins
 
 <details>
     <summary markdown="span"><strong>PipeWire</strong></summary>
+
+
     
 
 </details>
@@ -76,6 +78,11 @@ Once the scripts are executed, open Helvum. The application should appear as des
 <img src="images/finalHelvum.png" width="100%"  alt="Illustrative picture">
 
 If everything is OK, **Congratulations**, you have configured audio sharing on your system!
+
+## Usage
+When you're on a call, you should use the virtual microphone 'my-mic' as the input device, and you can choose any preferred output device. In this instance, I am using my headphones. See the example on the Discord:
+
+<img src="images/discordExample.png" width="100%"  alt="Illustrative picture">
 
 ## Conclusion
 
