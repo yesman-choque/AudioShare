@@ -4,7 +4,7 @@
 id=$(pw-cli list-objects | grep -B3 'node.name = "my-share"' | grep 'id' | awk '{print $2}' | tr -d ',=\n')
 
 # your audio input, left and right
-sound_driver_name="alsa_output.pci-0000_00_1f.3.analog-stereo"
+sound_driver_name=""
 
 # creating the modules that we will use
 pw-cli create-node adapter '{ factory.name=support.null-audio-sink node.name=my-share media.class=Audio/Sink object.linger=true audio.position=[FL FR] monitor.channel-volumes=true monitor.passthrough=true }'
