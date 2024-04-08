@@ -5,22 +5,38 @@ Welcome to the AudioShare repository, a streamlined solution for sharing compute
 ## Important Note
 While this guide is based on Fedora and Manjaro for ease of explanation, **the principles should apply to any Linux distribution**. Furthermore, it is important to highlight that over the years it is natural for most distributions to start migrating to pure PipeWire, as it is a more modern solution than PulseAudio.
 
-## Requirements
-
-- [PipeWire](https://pipewire.org/) or [pipewire-pulse](https://archlinux.org/packages/extra/x86_64/pipewire-pulse/)
-- [Helvum](https://flathub.org/apps/org.pipewire.Helvum)
-- Basic knowledge of command-line interface
-
 ## Features
 
 - Simple and direct system audio sharing.
 - Creation of a virtual microphone, usable across various conferencing applications.
 - Individual volume control for audio sharing.
 - High compatibility with different Linux distributions.
+  
 
 ## Getting Started
 
-To begin, determine whether your system uses PipeWire or PulseAudio in compatibility mode with pipewire-pulse. You can use the following commands to check your audio manager. The command that does not return an error, such as "unknown module," indicates your current  server stream of audio manager.
+### Requirements
+
+- [PipeWire](https://pipewire.org/) or [pipewire-pulse](https://archlinux.org/packages/extra/x86_64/pipewire-pulse/)
+- [Helvum](https://flathub.org/apps/org.pipewire.Helvum)
+- Basic knowledge of command-line interface
+
+### Installation
+
+1. Clone the repository
+
+    ```bash
+    git clone https://github.com/yesmanic/AudioShare.git
+    ```
+
+2. Navigate to the project directory
+
+    ```bash
+    cd AudioShare
+    ```
+###  Check your Server Stream
+
+To begin, determine whether your system uses PipeWire or PulseAudio in compatibility mode with pipewire-pulse. You can use the following commands to check your audio manager. The command that does not return an error, such as "unknown module," indicates your current server stream of audio manager.
 
 For PulseAudio:
 ```bash
@@ -32,13 +48,14 @@ For PipeWire:
 systemctl --user status pipewire
 ```
 
-## Environment Setup
+### Environment Setup
 
 Once you have identified your server, proceed according to the corresponding instructions provided below:
 
 <details>
     <summary markdown="span"><strong>PipeWire</strong></summary>
-    <!-- detailed PipeWire setup instructions go here -->
+    
+
 </details>
 
 <details>
@@ -46,7 +63,7 @@ Once you have identified your server, proceed according to the corresponding ins
     <!-- detailed PulseAudio setup instructions go here -->
 </details>
 
-## Configuring Audio Toggle
+### Configuring Audio Toggle
 
 For setting up an audio toggle to easily switch between standard audio and shared microphone audio.
 
