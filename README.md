@@ -99,35 +99,49 @@ Once you have run the script, review the changes it has made. If everything matc
 </details>
 
 <details>
-    <summary markdown="span"><strong>PulseAudio</strong></summary>
-    <!-- detailed PulseAudio setup instructions go here -->
+<summary markdown="span"><strong>Pipewire-Pulse</strong></summary>
+</br>
+We assume that you already PIPewire-Pulse installed on your system. If not, you can install it by `manjaro-pipewire` package on Manjaro.
+
+First, enter the `pipewire-pulse` folder:
+
+```bash
+cd pipewire-pulse
+```
+Soon after, we need to give `.sh` execution permission as administrator:
+
+```bash
+sudo chmod +x audioShare.sh
+```
+Now that we have given permission, we need to find out what the name of your sound card driver is to insert it into the script, to do this run:
+
+```bash
+sudo pactl list sources | grep node.name
+```
+
+You will see a list of sound card drivers, you need to find the one that starts with `alsa_input` and `alsa_output`. In my case, it is `alsa_input.pci-0000_00_1f.3.analog-stereo` and `alsa_output.pci-0000_00_1f.3.analog-stereo`, respectively. Of course, **it's probably not the same**, so look for one with a similar syntax if you have difficulty.
+
+Now you have to edit the `audioShare.sh` file, putting the name of the sound card driver in the variables `sound_driver_output_name` and `sound_driver_input_name`, like this:
+
+```bash
+sound_driver_output_name="alsa_output.pci-0000_00_1f.3.analog-stereo"
+sound_driver_input_name="alsa_input.pci-0000_00_1f.3.analog-stereo"
+```
+
+After running the script, review the changes you made. If everything matches what is described in the 'Usage' section, you have finished successfully.
+
+```bash
+./audioShare.sh
+```
 </details>
 
 ### Configuring Audio Toggle
 
 For setting up an audio toggle to easily switch between standard audio and shared microphone audio.
 
-We need to give `.sh` execution permission as administrator:
+ We need to give `.sh` execution permission as administrator:
 ```bash
 sudo chmod +x toggleAudioShare.sh
-```
-
-To make your life easier, it's quite helpful to set a keyboard shortcut to mute and unmute `my-share`, executing our script each time it's triggered. I will demonstrate using GNOME. Open settings and go to the Keyboard section:
-
-<img src="images/gnometoggle1.png" width="100%"  alt="Illustrative picture">
-
-go to Keyboard Shortcuts and click View and Customize Shorcuts:
-
-<img src="images/gnometoggle2.png" width="100%"  alt="Illustrative picture">
-
-Here is how I did it, pay attention, in Command you must place the location of your `toggleAudioShare.sh` file:
-
-<img src="images/gnometoggle3.png" width="100%"  alt="Illustrative picture">
-
-To find out the file directory, just use the `pwd` command in the terminal, when you find out, write in Command:
-
-```bash
-*location*/toggleAudioShare.sh
 ```
 
 ## Final Result
@@ -138,7 +152,7 @@ Once the scripts are executed, open Helvum. The application should appear as des
 
 <img src="images/finalHelvum.png" width="100%"  alt="Illustrative picture">
 
-If everything is OK, **Congratulations 🎉** You have configured audio sharing on your system!
+If everything is OK, **Congratulations 🎉**, you have configured audio sharing on your system!
 
 ## Usage
 
