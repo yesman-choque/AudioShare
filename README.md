@@ -80,6 +80,7 @@ Once the scripts are executed, open Helvum. The application should appear as des
 If everything is OK, **Congratulations**, you have configured audio sharing on your system!
 
 ## Usage
+
 When you're on a call, you should use the virtual microphone 'my-mic' as the input device, and you can choose any preferred output device. In this instance, I am using my headphones. See the example on the Discord:
 
 <img src="images/discordExample.png" width="100%"  alt="Illustrative picture">
