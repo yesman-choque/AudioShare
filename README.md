@@ -3,7 +3,7 @@
 Welcome to the AudioShare repository, a streamlined solution for sharing computer audio over a microphone. This versatile tool works across all Linux distributions, enabling users to transmit any computer audio during calls on platforms like Discord, Telegram, and more. The following instructions predominantly use Fedora (for users with pure PipeWire) and Manjaro (for those using pipewire-pulse).
 
 ## Important Note
-While this guide is based on Fedora and Manjaro for ease of explanation,  <span style="color: #19e33b"><strong> the principles should apply to any Linux distribution</strong></span>. Furthermore, it is important to highlight that over the years it is natural for most distributions to start migrating to pure PipeWire, as it is a more modern solution than PulseAudio.
+While this guide is based on Fedora and Manjaro for ease of explanation, **the principles should apply to any Linux distribution**. Furthermore, it is important to highlight that over the years it is natural for most distributions to start migrating to pure PipeWire, as it is a more modern solution than PulseAudio.
 
 ## Requirements
 
