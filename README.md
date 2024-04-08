@@ -77,7 +77,7 @@ sudo pw-link -iol
 In my case, mine is called `alsa_output.pci-0000_00_1f.3.analog-stereo`, of course **it's probably not the same**, so look for one with a similar syntax if you have difficulty.
 
 <img src="images/pw-link -iol.png" width="100%"  alt="Illustrative picture">
-<br><br>
+<br>
 
 Now you have to edit the `audioShare.sh` file, here I will use nano for this:
 
