@@ -52,12 +52,13 @@ For setting up an audio toggle to easily switch between standard audio and share
 
 ## Final Result
 
-After setting up your `.sh` scripts successfully, they can be used as you feel comfortable. We recommend configuring them to start with the system. If execution is incomplete, likely due to "sleep" commands in the bash scripts, you may need to adjust the sleep durations based on your computer's boot speed.
+After setting up your `.sh` scripts successfully, they can be used as you feel comfortable. We recommend configuring them to start with the system. If execution is incomplete, likely due to `sleep` commands in the **bash scripts**, you may need to adjust the sleep durations based on your computer's boot speed.
 
 Once the scripts are executed, open Helvum. The application should appear as described in this image:
 
 <img src="images/finalHelvum.png" width="100%"  alt="Illustrative picture">
 
+If everything is OK, **Congratulations**, you have configured audio sharing on your system!
 
 ## Conclusion
 
