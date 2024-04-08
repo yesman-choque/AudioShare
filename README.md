@@ -54,9 +54,19 @@ Once you have identified your server, proceed according to the corresponding ins
 
 <details>
     <summary markdown="span"><strong>PipeWire</strong></summary>
+    <br>
 
+Alright, the first thing we should do is run this command inside the AudioShare folder:
 
-    
+```bash
+cd pipewire
+```
+
+Soon after, we need to give `.sh` execution permission as administrator:
+
+```bash
+sudo chmod +x audioShare.sh toggleAudioShare.sh
+```
 
 </details>
 
