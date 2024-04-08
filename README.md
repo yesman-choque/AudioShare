@@ -130,10 +130,6 @@ To find out the file directory, just use the `pwd` command in the terminal, when
 *location*/toggleAudioShare.sh
 ```
 
-
-
-
-
 ## Final Result
 
 After setting up your `.sh` scripts successfully, they can be used as you feel comfortable. We recommend configuring them to start with the system. If execution is incomplete, likely due to `sleep` commands in the **bash scripts**, you may need to adjust the sleep durations based on your computer's boot speed.
