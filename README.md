@@ -89,7 +89,7 @@ and insert the name of the sound card driver into the variable `sound_driver_nam
 ```bash
 sound_driver_name="here"
 ```
-After saving the changes, run Helvum on your computer and check the current state, after that just run `audioShare.sh`, like this:
+After running the script, review the changes you made. If everything matches what is described in the 'Usage' section, you have finished successfully.
 
 ```bash
 ./audioShare
