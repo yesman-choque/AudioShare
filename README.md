@@ -107,10 +107,32 @@ Once you have run the script, review the changes it has made. If everything matc
 
 For setting up an audio toggle to easily switch between standard audio and shared microphone audio.
 
- We need to give `.sh` execution permission as administrator:
+We need to give `.sh` execution permission as administrator:
 ```bash
 sudo chmod +x toggleAudioShare.sh
 ```
+
+To make your life easier, it's quite helpful to set a keyboard shortcut to mute and unmute `my-share`, executing our script each time it's triggered. I will demonstrate using GNOME. Open settings and go to the Keyboard section:
+
+<img src="images/gnometoggle1.png" width="100%"  alt="Illustrative picture">
+
+go to Keyboard Shortcuts and click View and Customize Shorcuts:
+
+<img src="images/gnometoggle2.png" width="100%"  alt="Illustrative picture">
+
+Here is how I did it, pay attention, in Command you must place the location of your `toggleAudioShare.sh` file:
+
+<img src="images/gnometoggle3.png" width="100%"  alt="Illustrative picture">
+
+To find out the file directory, just use the `pwd` command in the terminal, when you find out, write in Command:
+
+```bash
+*location*/toggleAudioShare.sh
+```
+
+
+
+
 
 ## Final Result
 
@@ -120,7 +142,7 @@ Once the scripts are executed, open Helvum. The application should appear as des
 
 <img src="images/finalHelvum.png" width="100%"  alt="Illustrative picture">
 
-If everything is OK, **Congratulations 🎉**, you have configured audio sharing on your system!
+If everything is OK, **Congratulations 🎉** You have configured audio sharing on your system!
 
 ## Usage
 
