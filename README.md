@@ -65,8 +65,9 @@ cd pipewire
 Soon after, we need to give `.sh` execution permission as administrator:
 
 ```bash
-sudo chmod +x audioShare.sh toggleAudioShare.sh
+sudo chmod +x audioShare.sh 
 ```
+
 
 </details>
 
@@ -78,6 +79,10 @@ sudo chmod +x audioShare.sh toggleAudioShare.sh
 ### Configuring Audio Toggle
 
 For setting up an audio toggle to easily switch between standard audio and shared microphone audio.
+
+```bash
+sudo chmod +x toggleAudioShare.sh
+```
 
 ## Final Result
 
