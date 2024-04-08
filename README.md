@@ -3,12 +3,12 @@
 Welcome to the AudioShare repository, a streamlined solution for sharing computer audio over a microphone. This versatile tool works across all Linux distributions, enabling users to transmit any computer audio during calls on platforms like Discord, Telegram, and more. The following instructions predominantly use Fedora (for users with pure PipeWire) and Manjaro (for those using pipewire-pulse).
 
 ## Important Note
-While this guide is based on Fedora and Manjaro for ease of explanation, the principles **should apply to any Linux distribution**. Furthermore, it is important to highlight that over the years it is natural for most distributions to start migrating to pure PipeWire, as it is a more modern solution than PulseAudio.
+While this guide is based on Fedora and Manjaro for ease of explanation,  <span style="color: #19e33b"><strong> the principles should apply to any Linux distribution</strong></span>. Furthermore, it is important to highlight that over the years it is natural for most distributions to start migrating to pure PipeWire, as it is a more modern solution than PulseAudio.
 
 ## Requirements
 
-- PipeWire or pipewire-pulse
-- Helvum
+- [PipeWire](https://pipewire.org/) or [pipewire-pulse](https://archlinux.org/packages/extra/x86_64/pipewire-pulse/)
+- [Helvum](https://flathub.org/apps/org.pipewire.Helvum)
 - Basic knowledge of command-line interface
 
 ## Features
@@ -20,7 +20,7 @@ While this guide is based on Fedora and Manjaro for ease of explanation, the pri
 
 ## Getting Started
 
-To begin, determine whether your system uses PipeWire or PulseAudio in compatibility mode with pipewire-pulse. You can use the following commands to check your audio manager. The command that does not return an error, such as "unknown module," indicates your current audio manager.
+To begin, determine whether your system uses PipeWire or PulseAudio in compatibility mode with pipewire-pulse. You can use the following commands to check your audio manager. The command that does not return an error, such as "unknown module," indicates your current  server stream of audio manager.
 
 For PulseAudio:
 ```bash
@@ -34,7 +34,7 @@ systemctl --user status pipewire
 
 ## Environment Setup
 
-Once you have identified your audio manager, proceed according to the corresponding instructions provided below:
+Once you have identified your server, proceed according to the corresponding instructions provided below:
 
 <details>
     <summary markdown="span"><strong>PipeWire</strong></summary>
