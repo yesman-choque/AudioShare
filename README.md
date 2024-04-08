@@ -80,6 +80,7 @@ sudo chmod +x audioShare.sh
 
 For setting up an audio toggle to easily switch between standard audio and shared microphone audio.
 
+ We need to give `.sh` execution permission as administrator:
 ```bash
 sudo chmod +x toggleAudioShare.sh
 ```
