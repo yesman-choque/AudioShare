@@ -101,7 +101,8 @@ Once you have run the script, review the changes it has made. If everything matc
 <details>
 <summary markdown="span"><strong>Pipewire-Pulse</strong></summary>
 </br>
-We assume that you already PIPewire-Pulse installed on your system. If not, you can install it by `manjaro-pipewire` package on Manjaro.
+
+We assume that you already Pipewire-Pulse installed on your system. If not, you can install it by `manjaro-pipewire` on Manjaro.
 
 First, enter the `pipewire-pulse` folder:
 
