@@ -68,6 +68,28 @@ Soon after, we need to give `.sh` execution permission as administrator:
 sudo chmod +x audioShare.sh 
 ```
 
+Now that we have given permission, we need to find out what the name of your sound card driver is to insert it into the script, to do this run:
+
+```bash
+sudo pw-link -iol
+```
+
+In my case, mine is called `alsa_output.pci-0000_00_1f.3.analog-stereo`, of course **it's probably not the same**, so look for one with a similar syntax if you have difficulty.
+
+<img src="images/pw-link -iol.png" width="100%"  alt="Illustrative picture">
+<br><br>
+
+Now you have to edit the `audioShare.sh` file, here I will use nano for this:
+
+```bash
+sudo nano audioShare.sh
+```
+and insert the name of the sound card driver into the variable `sound_driver_name`, like this
+
+```bash
+sound_driver_name="here"
+```
+
 
 </details>
 
