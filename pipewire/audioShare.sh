@@ -29,7 +29,7 @@ sleep 5
 
 # linking the virtual microphone
 pw-link my-share:monitor_FL my-mic:input_FL
-pw-link my-share:monitor_FL my-mic:input_FR
+pw-link my-share:monitor_FR my-mic:input_FR
 
 # setting the volume of the audio share
 pw-cli s $id Props '{ channelVolumes: [ 0.2, 0.2 ] }'
