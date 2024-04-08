@@ -32,6 +32,6 @@ pw-link my-share:monitor_FL my-mic:input_FL
 pw-link my-share:monitor_FR my-mic:input_FR
 
 # setting the volume of the audio share
-pw-cli s $id Props '{ channelVolumes: [ 0.2, 0.2 ] }'
+pw-cli s $id Props '{ channelVolumes: [ 0.5, 0.5 ] }'
 
 exit 0
