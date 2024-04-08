@@ -89,8 +89,13 @@ and insert the name of the sound card driver into the variable `sound_driver_nam
 ```bash
 sound_driver_name="here"
 ```
+After saving the changes, run Helvum on your computer and check the current state, after that just run `audioShare.sh`, like this:
 
+```bash
+./audioShare
+```
 
+Once you have run the script, review the changes it has made. If everything matches what is described in the 'Usage' section.
 </details>
 
 <details>
@@ -115,7 +120,7 @@ Once the scripts are executed, open Helvum. The application should appear as des
 
 <img src="images/finalHelvum.png" width="100%"  alt="Illustrative picture">
 
-If everything is OK, **Congratulations**, you have configured audio sharing on your system!
+If everything is OK, **Congratulations 🎉**, you have configured audio sharing on your system!
 
 ## Usage
 
