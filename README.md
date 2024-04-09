@@ -17,7 +17,7 @@ While this guide is based on Fedora and Manjaro for ease of explanation, **the p
 
 ### Requirements
 
-- [PipeWire](https://pipewire.org/) or [pipewire-pulse](https://archlinux.org/packages/extra/x86_64/pipewire-pulse/)
+- [PipeWire](https://pipewire.org/) or [pipewire-pulse](https://linktr.ee/pipewirepulse)
 - [Helvum](https://flathub.org/apps/org.pipewire.Helvum)
 - Basic knowledge of command-line interface
 
